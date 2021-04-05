@@ -1,0 +1,38 @@
+.headline-1 {
+  font-size: $fs-headline;
+  font-weight: $fw-bold;
+}
+
+.headline-2 {
+  font-size: $fs-headline2;
+  font-weight: $fw-bold;
+}
+
+.subtitle {
+  font-size: $fs-subtitle;
+  font-weight: $fw-semibold;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.caption {
+  font-size: $fs-caption;
+  font-weight: $fw-regular;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.label {
+  font-size: $fs-label;
+  font-weight: $fw-bold;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.subtext {
+  font-size: $fs-paragraph;
+  font-weight: $fw-regular;
+  color: $color-basic;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

@@ -1,0 +1,40 @@
+.card {
+  @include mShadow(1);
+  padding: $si-l;
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+  &:active {
+    background-color: darken($color-primary, 10%);
+  }
+}
+
+.link {
+  color: $color-primary;
+
+  &:hover {
+    color: darken($color-primary, 5%);
+  }
+  &:active {
+    color: darken($color-primary, 10%);
+  }
+}

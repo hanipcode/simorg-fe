@@ -1,0 +1,36 @@
+.alert {
+  display: flex;
+  background: $color-info;
+  flex-grow: 1;
+  align-items: center;
+  padding: $si-m;
+  border-radius: 4px;
+  min-height: 80px;
+  margin: $ss-m;
+}
+
+.alert__text {
+  color: #fff;
+  margin: $sx-m;
+}
+.alert__icon {
+  fill: white;
+  width: 36px;
+  height: 36px;
+}
+
+.alert--warning {
+  background: $color-warning;
+}
+
+.alert--danger {
+  background: $color-danger;
+}
+
+.alert--success {
+  background: $color-success;
+}
+
+.alert--shake {
+  @include mShakeAnimation();
+}

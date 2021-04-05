@@ -1,0 +1,78 @@
+.sidebar {
+  background: $color-primary-900;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: auto;
+}
+.sidebar__logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: $si-m;
+}
+.sidebar__logo--text {
+  font-size: 42px;
+  color: white;
+}
+.sidebar__logo-name {
+  color: white;
+  margin: $sx-m;
+  font-size: 16px;
+  font-weight: $fw-semibold;
+  line-height: 20px;
+}
+.sidebar__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: $si-m;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-primary-800;
+
+    .sidebar__menu-icon {
+      fill: white;
+    }
+
+    .sidebar__menu-text {
+      color: white;
+    }
+  }
+}
+.sidebar__menu-icon {
+  fill: $color-basic-600;
+}
+.sidebar__menu-text {
+  margin: $sx-m;
+  font-weight: $fw-bold;
+  font-size: $fs-subtitle;
+  color: $color-basic-600;
+}
+
+.sidebar__menu--active {
+  background: $color-primary-800;
+
+  .sidebar__menu-icon {
+    fill: white;
+  }
+
+  .sidebar__menu-text {
+    color: white;
+  }
+}
+
+.sidebar__menu-spacer {
+  display: block;
+  width: 100%;
+  height: $space-l;
+}
+
+.sidebar__menu-title {
+  text-transform: uppercase;
+  color: $color-basic;
+  padding: $sx-m;
+  margin: $ss-xs;
+  font-family: 'Raleway';
+}

@@ -1,0 +1,39 @@
+.auth-page {
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-page__card {
+  height: fit-content;
+  width: 450px;
+}
+
+.auth-page__head-container {
+  margin: $ss-l;
+}
+
+.auth-page__logo-text {
+  text-align: center;
+  margin: $ss-m;
+  font-size: 88px;
+  color: $color-primary;
+}
+.auth-page__headline {
+  text-align: center;
+  margin: $ss-m;
+}
+.auth-page__subtext {
+  text-align: center;
+}
+.auth-page__form {
+  margin: $ss-l;
+}
+.auth-page__notice {
+  text-align: center;
+}
+
+.auth-page__button {
+  @include mShadow(1);
+  background: $gradient-1;
+  font-weight: $fw-semibold;
+}

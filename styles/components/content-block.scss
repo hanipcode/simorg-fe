@@ -1,0 +1,20 @@
+.content-block {
+  @include mShadow(1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: $si-m;
+}
+
+.content-block--l-p {
+  padding: $si-l;
+}
+
+.content-block--full {
+  height: 100%;
+}
+
+.dashboard-page__heading-container {
+  margin: $ss-l;
+}

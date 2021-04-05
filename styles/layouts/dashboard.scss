@@ -1,0 +1,78 @@
+.dashboard-page {
+  flex-direction: row;
+  width: 100%;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-header {
+  @include mShadowBottom(1);
+  display: flex;
+
+  padding: $si-m;
+  background: white;
+  position: relative;
+}
+
+.dashboard-header__menu-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header__profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: $sx-m;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-basic-100;
+  }
+}
+
+.dashboard-header__profile-picture {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin: $sx-s;
+}
+
+.dashboard-header__profile-name {
+  font-weight: $fw-semibold;
+  margin: $sx-s;
+}
+
+.dashboard-page__content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $si-l;
+}
+
+.dashboard-page__content-group {
+  display: flex;
+  flex-direction: column;
+  margin: $ss-l;
+}
+.dashboard-page__content-group--row {
+  flex-direction: row;
+}
+
+.dashboard-page__content-group--row {
+  .dashboard-page__summary {
+    margin-right: $space-m;
+  }
+  .dashboard-page__content-block {
+    margin-right: $space-m;
+  }
+}

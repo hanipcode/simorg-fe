@@ -1,0 +1,155 @@
+$input-height: 45px;
+$input-border: 1px solid $color-basic;
+
+.fieldset {
+  display: flex;
+  flex-grow: 1;
+}
+.fieldset--horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .fieldset__field:nth-child(odd) {
+    padding-right: $space-l;
+  }
+}
+
+.fieldset--2-column {
+  align-content: flex-start;
+  .fieldset__field {
+    box-sizing: border-box;
+    flex-basis: 50%;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: $ss-m;
+}
+
+.field__error-message {
+  color: $color-danger;
+  margin-top: $space-xs;
+}
+
+.label {
+  text-transform: uppercase;
+  margin: $ss-xs;
+  color: $color-basic;
+}
+
+.input {
+  height: $input-height;
+  border: $input-border;
+  border-radius: 2px;
+  padding: $sx-m;
+}
+
+.image-field {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border-radius: 4px;
+
+  &:hover {
+    .image-field__controls {
+      opacity: 1;
+    }
+  }
+}
+
+.image-field__preview {
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+}
+
+.image-field__input {
+  display: none;
+}
+
+.image-field__controls {
+  border-radius: 4px;
+  transition: 0.5s all;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-i-1;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-field__controls-icon-container {
+  background: rgba(0, 0, 0, 0.35);
+  padding: $si-s;
+  box-sizing: border-box;
+  border-radius: 100%;
+  transition: 0.5s all;
+  cursor: pointer;
+  margin-right: $space-m;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.image-field__controls-icon {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+
+.form--is-error {
+  @include mShakeAnimation;
+  .input {
+    border-color: $color-danger;
+  }
+}
+
+.field--is-error {
+  @include mShakeAnimation;
+  .input {
+    border-color: $color-danger;
+  }
+}
+
+.react-select {
+  &__control {
+    padding: $sx-xs !important;
+    height: $input-height !important;
+    border: $input-border !important;
+    border-radius: 2px !important;
+  }
+  &__indicator {
+    color: $color-basic !important;
+  }
+  &__indicator-separator {
+    background-color: $color-basic !important;
+  }
+}
+
+.react-date-picker {
+  &__wrapper {
+    padding: $sx-s !important;
+    height: $input-height !important;
+    border: $input-border !important;
+    border-radius: 2px !important;
+  }
+  &__button__icon {
+    fill: $color-basic !important;
+    color: $color-basic !important;
+    stroke: $color-basic !important;
+  }
+}

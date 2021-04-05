@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&:wght@400&display=swap');
+
+// setup
+@import './normalize';
+@import './spacing';
+$fw-regular: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fs-headline: 32px;
+$fs-headline2: 24px;
+$fs-subtitle: 16px;
+$fs-paragraph: 16px;
+$fs-s-paragraph: 14px;
+$fs-caption: 13px;
+$fs-label: 12px;
+
+$color-primary: #11a1fd;
+$color-primary-700: #085db6;
+$color-primary-800: #054292;
+$color-primary-900: #032f79;
+$color-basic: #7d9eb5;
+$color-basic-100: #f3f7f9;
+$color-basic-600: #5b7d9b;
+$color-basic-900: #172e56;
+$color-info: #5a75f8;
+$color-info-900: #111b77;
+$color-success: #07c180;
+$color-warning: #ff9931;
+$color-danger: #ff4d26;
+$color-black: #223345;
+
+$z-i-min: -1;
+$z-i-0: 0;
+$z-i-1: 3;
+
+$gradient-1: linear-gradient(
+  to left top,
+  #11a1fd,
+  #0f98f4,
+  #0d8feb,
+  #0c86e2,
+  #0c7dd9
+);
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $color-black;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+input,
+button,
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: $fs-paragraph;
+  font-weight: $fw-regular;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+label {
+  font-size: $fs-label;
+  font-weight: $fw-bold;
+}
+
+input {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+button {
+  border: 0;
+  outline: none;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+  &:active {
+    outline: none;
+    border: 0;
+  }
+}
+
+@import './animations';
+@import './mixins';
+@import './headings';
+@import './components/shared';
+@import './components/sidebar';
+@import './components/alert';
+@import './components/summary';
+@import './components/form';
+@import './components/layout';
+@import './components/content-block';
+@import './layouts/main';
+@import './layouts/login';
+@import './layouts/dashboard';
+@import './layouts/profile';
